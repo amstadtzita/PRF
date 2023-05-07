@@ -1,0 +1,23 @@
+<div *ngIf="products && products.length">
+  <h1>Product list</h1>
+  <table>
+      <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th>Select</th>
+          <th>Delete</th>
+      </tr>
+      <tr *ngFor="let product of products">
+          <td>{{ product.name }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.description }}</td>
+          <td><button (click)="openDetails(product)">SELECT</button></td>
+          <td><button (click)="delete(product)">DELETE</button></td>
+
+      </tr>
+  </table>
+</div>
+
+
+<app-product-details [product]="chosenProduct" (productEmitter)="receiveProduct($event)"></app-product-details>

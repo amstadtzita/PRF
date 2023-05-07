@@ -1,0 +1,68 @@
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
+/* User Details Styles */
+
+.user-details {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.user-details span {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  width: 100px;
+}
+
+.user-details input {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.user-details button {
+  margin-top: 1rem;
+}

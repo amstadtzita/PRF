@@ -1,0 +1,25 @@
+<h1>Login</h1>
+
+<div class="form-container">
+  <div class="form-group">
+    <label>Username:</label>
+    <input type="text" [(ngModel)]="username" />
+  </div>
+
+  <div class="form-group">
+    <label>Password:</label>
+    <input type="password" [(ngModel)]="password" />
+  </div>
+
+  <button (click)="navigateToUsersPage()" class="btn btn-primary">Login</button>
+</div>
+
+
+
+<!--
+<div><span>Email: </span><input type="text" [(ngModel)]="email" /></div>
+<div><span>Password: </span><input type="password" [(ngModel)]="password" /></div>
+
+ <button [routerLink]="['/users']">Login</button>
+<button (click)="navigateToUsersPage()">Login</button>
+-->

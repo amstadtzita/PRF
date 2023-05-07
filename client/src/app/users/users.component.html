@@ -1,0 +1,23 @@
+<div *ngIf="users && users.length">
+    <h1>User list</h1>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Select</th>
+            <th>Delete</th>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td>{{ user.username }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.address }}</td>
+            <td><button (click)="openDetails(user)">SELECT</button></td>
+            <td><button (click)="delete(user)">DELETE</button></td>
+
+        </tr>
+    </table>
+</div>
+
+
+<app-details [user]="chosenUser" (userEmitter)="receiveUser($event)"></app-details>
